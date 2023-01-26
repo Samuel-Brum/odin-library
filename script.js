@@ -1,1 +1,1 @@
-console.log("estou funcionando");
+console.log('estou funcionando');
