@@ -1,3 +1,17 @@
 h1 {
   color: brown;
 }
+
+body {
+  display: grid;
+  grid-template-rows: [header-start] 1fr [header-end my-books-start]
+  2fr [my-books-end add-books-start] 2fr [add-books-end];
+  justify-content: center;
+}
+
+body > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
