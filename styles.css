@@ -4,8 +4,8 @@ h1 {
 
 body {
   display: grid;
-  grid-template-rows: [header-start] 1fr [header-end my-books-start]
-  2fr [my-books-end add-books-start] 2fr [add-books-end];
+  grid-template-rows: [header-start] 1fr [header-end display-start]
+  2fr [display-end add-books-start] 2fr [add-books-end];
   justify-content: center;
 }
 
@@ -14,4 +14,18 @@ body > div {
   justify-content: center;
   align-items: center;
 }
+
+.showcase {
+  gap: 50px;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
 
