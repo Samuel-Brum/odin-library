@@ -52,6 +52,7 @@ function displayBooks(library) {
       addCard(bookInfo, 'showcase');
     }
   }
+  removeCardSetup();
 }
 
 function addNewCard() {
@@ -81,6 +82,16 @@ function addNewCard() {
   addBookBtn.setAttribute('id', 'add-button');
   button.append(addBookBtn);
   addBookBtn.innerHTML = 'Add Book';
+}
+// TODO quebrado
+function removeCardSetup() {
+  const removeButtonElements = document.getElementsByClassName('remove-button');
+  console.log(removeButtonElements);
+  for (let i = 0; i < removeButtonElements.length; i++) {
+    removeButtonElements[i].addEventListener('click', function(event) {
+      event.target.closest('button').parentNode.parentNode.remove();
+    });
+  }
 }
 
 function handleForm(event) {
@@ -124,8 +135,6 @@ function showForm() {
 
   const div = document.getElementById('form-section');
   div.appendChild(form);
-
-  console.log(myLibrary);
 }
 
 document.addEventListener('submit', addNewCard);
@@ -151,3 +160,5 @@ addBookToLibrary(babel, myLibrary);
 addBookToLibrary(psalmFTW, myLibrary);
 
 displayBooks(myLibrary);
+
+
