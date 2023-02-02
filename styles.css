@@ -23,9 +23,47 @@ body > div {
 
 .card {
   border: 2px solid black;
-  padding: 5px;
+  padding: 8px;
   border-radius: 5px;
 }
 
+.button-card-div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
+.edit-button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border-width: 1px;
+}
 
+.remove-button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border-width: 1px;
+
+}
+
+.add-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-books-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
